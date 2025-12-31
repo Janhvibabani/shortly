@@ -1,0 +1,34 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="prod-exec" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../../../Program Files/Eclipse Adoptium/jdk-23.0.2.7-hotspot" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <envs>
+      <env name="DATABASE_DIALECT" value="org.hibernate.dialect.PostgreSQLDialect" />
+      <env name="DATABASE_URL" value="jdbc:postgresql://ep-little-leaf-ad23bdz0-pooler.c-2.us-east-1.aws.neon.tech/urlShortner?user=neondb_owner&amp;password=npg_aOBDcK3FrdW8&amp;sslmode=require&amp;channelBinding=require" />
+      <env name="FRONTEND_URL" value="http://localhost:5173/" />
+      <env name="JWT_SECRET" value="a74f11a656ebf1f4d3de05492cf749705f44ee1f68c6b5e2dff0e78e23886d35" />
+      <env name="PASSWORD" value="npg_aOBDcK3FrdW8" />
+      <env name="USERNAME" value="neondb_owner" />
+    </envs>
+    <option name="envFilePaths">
+      <option value="$PROJECT_DIR$/.env.prod" />
+    </option>
+    <option name="MAIN_CLASS_NAME" value="com.url.shortener.UrlShortenerSbApplication" />
+    <module name="url-shortener-sb" />
+    <option name="PROGRAM_PARAMETERS" value="$MAVEN_REPOSITORY$" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+    <extension name="net.ashald.envfile">
+      <option name="IS_ENABLED" value="false" />
+      <option name="IS_SUBST" value="true" />
+      <option name="IS_PATH_MACRO_SUPPORTED" value="true" />
+      <option name="IS_IGNORE_MISSING_FILES" value="true" />
+      <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="true" />
+      <ENTRIES>
+        <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+      </ENTRIES>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
